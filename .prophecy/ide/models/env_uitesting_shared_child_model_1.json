@@ -8,6 +8,26 @@
       "sources" : [ ]
     },
     "graphConfig" : {
+      "modelConfig" : {
+        "materialized" : "view",
+        "sql_header" : "Asdfasdfafw",
+        "alias" : "'asdfq3w4fqdf'",
+        "database" : "mydb",
+        "docs" : {
+          "show" : true
+        },
+        "enabled" : true,
+        "full_refresh" : false,
+        "persist_docs" : {
+          "relation" : true,
+          "columns" : false
+        },
+        "pre-hook" : "\"{{single_prehook()}}\"",
+        "post-hook" : "",
+        "schema" : "'my_schema'",
+        "tags" : [ "'tag1'", "\"tag2\"" ],
+        "on_schema_change" : "append_new_columns"
+      },
       "userDefinedConfig" : {
         "vars" : { }
       }

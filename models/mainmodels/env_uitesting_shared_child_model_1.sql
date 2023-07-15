@@ -1,3 +1,20 @@
+{{
+  config({    
+    "materialized": "view",
+    "sql_header": "Asdfasdfafw",
+    "tags": ['tag1',"tag2"],
+    "on_schema_change": "append_new_columns",
+    "alias": "'asdfq3w4fqdf'",
+    "enabled": true,
+    "database": "mydb",
+    "schema": "'my_schema'",
+    "docs": {"show": true},
+    "persist_docs": {"relation": false, "columns": true},
+    "pre_hook": ["{{single_prehook()}}"],
+    "post_hook": ["singleValue",'soemValue',"Grant permission on {{this}} after","{{mac_post_hook()}}"]
+  })
+}}
+
 WITH env_uitesting_shared_mid_model_1 AS (
 
   SELECT * 
