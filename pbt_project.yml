@@ -1,6 +1,6 @@
 name: SQL_DatabricksSharedBasic
 description: ''
-version: '1.0'
+version: 1.0-SNAPSHOT
 author: null
 language: sql
 buildSystem: ''
@@ -31,7 +31,6 @@ jobs:
       clusterId: null
     enabled: null
     createdAt: '2023-04-21 14:08:05'
-    modifiedAt: '2023-04-25 15:20:52'
     author: abhisheks+shared@prophecy.io
   jobs/REL_DB_AIRFLOW:
     name: REL_DB_AIRFLOW
@@ -55,12 +54,10 @@ jobs:
       clusterId: null
     enabled: null
     createdAt: '2023-04-21 14:20:18'
-    modifiedAt: '2023-04-25 15:56:04'
     author: abhisheks+shared@prophecy.io
 functions:
   author: null
   createdAt: '2023-04-12 09:18:21'
-  modifiedAt: '2023-04-12 09:18:21'
   gems: {}
   udfs: {}
   udafs: {}
@@ -69,6 +66,7 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/tpcds_uitesting_shared_1:
     name: tpcds_uitesting_shared_1
+    schema: null
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -78,9 +76,9 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-04-19 14:31:39'
-    modifiedAt: '2023-04-19 14:31:39'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_useallmodel_1:
     name: env_uitesting_shared_useallmodel_1
+    schema: null
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -90,9 +88,9 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-04-12 10:03:43'
-    modifiedAt: '2023-04-12 10:03:43'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_parent_model_1:
     name: env_uitesting_shared_parent_model_1
+    schema: null
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -102,9 +100,9 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-04-12 09:20:52'
-    modifiedAt: '2023-04-12 09:20:52'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_child_model_1:
     name: env_uitesting_shared_child_model_1
+    schema: null
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -114,9 +112,9 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-04-12 09:20:35'
-    modifiedAt: '2023-04-12 09:20:35'
   .prophecy/metadata/sqlmodels/env_uitesting_shared_mid_model_1:
     name: env_uitesting_shared_mid_model_1
+    schema: null
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -126,7 +124,6 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-04-12 09:19:50'
-    modifiedAt: '2023-04-12 09:19:50'
 sqlMacros:
   .prophecy/metadata/sqlmacros/qa_concat_function_main:
     name: qa_concat_function_main
@@ -137,7 +134,6 @@ sqlMacros:
     - macros/functions/qa_concat_function.sql
     - macros/functions/functions.yml
     createdAt: '2023-04-12 09:27:48'
-    modifiedAt: '2023-04-12 09:27:48'
   .prophecy/metadata/sqlmacros/qa_select_all_not_null_gem:
     name: qa_select_all_not_null_gem
     macroType: query
@@ -148,16 +144,15 @@ sqlMacros:
     - .prophecy/ide/macros/qa_select_all_not_null_gem.json
     - macros/gems/gems.yml
     createdAt: '2023-04-12 09:26:51'
-    modifiedAt: '2023-04-12 09:26:51'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_customers:
     name: raw_customers
+    schema: null
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
     - seeds/raw/raw_customers.csv
     createdAt: '2023-04-12 09:25:50'
-    modifiedAt: '2023-04-12 09:25:50'
 sqlSources:
   .prophecy/metadata/sqlsources/spark_catalog_qa_database:
     name: spark_catalog.qa_database
@@ -166,35 +161,33 @@ sqlSources:
     files:
     - prophecy-sources/sources.yml
     createdAt: '2023-04-12 09:22:07'
-    modifiedAt: '2023-04-12 09:22:07'
     tables:
     - name: all_type_parquet
+      schema: null
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-12 09:22:07'
-      modifiedAt: '2023-04-12 09:22:07'
     - name: store_sales
+      schema: null
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-19 17:49:01'
-      modifiedAt: '2023-04-19 17:49:01'
     - name: item
+      schema: null
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-19 17:49:08'
-      modifiedAt: '2023-04-19 17:49:08'
     - name: date_dim
+      schema: null
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-19 17:49:16'
-      modifiedAt: '2023-04-19 17:49:16'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
   description: null
   author: abhisheks+e2etests@prophecy.io
   createdAt: '2023-04-12 09:18:21'
-  modifiedAt: '2023-04-12 09:18:21'
 dependencies: '[]'
 projectDependencies: {}
 pipelineConfigurations: {}
